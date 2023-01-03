@@ -9,11 +9,7 @@ and public area and perimeter methods
 """
 
 
-
-
-
 class Rectangle:
-
     """
 
     Defines class rectangle with private attribute width and height
@@ -56,22 +52,14 @@ class Rectangle:
 
         self.height = height
 
-
-
     @property
-
     def width(self):
-
         """ Getter returns width """
 
         return self.__width
 
-
-
     @width.setter
-
     def width(self, value):
-
         """ Setter sets width if int > 0 """
 
         if not isinstance(value, int):
@@ -84,20 +72,14 @@ class Rectangle:
 
         self.__width = value
 
-
-
     @property
-
     def height(self):
 
         """ Getter returns height """
 
         return self.__height
 
-
-
     @height.setter
-
     def height(self, value):
 
         """ Setter sets height if int > 0 """
@@ -112,22 +94,15 @@ class Rectangle:
 
         self.__height = value
 
-
-
     def area(self):
-
         """ Return width * height """
 
         return self.__width * self.__height
 
-
-
     def perimeter(self):
-
         """ Return 2*(width + height) (or return 0 if width or height is 0)"""
 
         if self.__width == 0 or self.__height == 0:
 
             return 0
-
         return 2 * (self.__width + self.height)
