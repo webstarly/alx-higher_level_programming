@@ -9,9 +9,6 @@ public area and perimeter methods, and allows printing #'s, and deletes
 """
 
 
-
-
-
 class Rectangle:
 
     """
@@ -60,20 +57,14 @@ class Rectangle:
 
         self.height = height
 
-
-
     @property
-
     def width(self):
 
         """ Getter returns width """
 
         return self.__width
 
-
-
     @width.setter
-
     def width(self, value):
 
         """ Setter sets width if int > 0 """
@@ -88,20 +79,14 @@ class Rectangle:
 
         self.__width = value
 
-
-
     @property
-
     def height(self):
 
         """ Getter returns height """
 
         return self.__height
 
-
-
     @height.setter
-
     def height(self, value):
 
         """ Setter sets height if int > 0 """
@@ -116,15 +101,11 @@ class Rectangle:
 
         self.__height = value
 
-
-
     def area(self):
 
         """ Return width * height """
 
         return self.__width * self.__height
-
-
 
     def perimeter(self):
 
@@ -135,8 +116,6 @@ class Rectangle:
             return 0
 
         return 2 * (self.__width + self.height)
-
-
 
     def __str__(self):
 
@@ -150,15 +129,11 @@ class Rectangle:
 
         return rect
 
-
-
     def __repr__(self):
 
         """ String representation to recreate new instance """
 
         return "Rectangle({:d}, {:d})".format(self.width, self.height)
-
-
 
     def __del__(self):
 
