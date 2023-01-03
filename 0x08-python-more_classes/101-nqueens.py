@@ -12,6 +12,8 @@ Solutions are represented in the format [[r, c], [r, c], [r, c], [r, c]]
 where `r` and `c` represent the row and column, respectively, where a
 queen must be placed on the chessboard.
 """
+
+
 import sys
 
 
@@ -114,6 +116,7 @@ def recursive_solve(board, row, queens, solutions):
                                         queens + 1, solutions)
     return (solutions)
 
+
 if __name__ == "__main__":
 
     if len(sys.argv) != 2:
@@ -133,8 +136,6 @@ if __name__ == "__main__":
         print("N must be at least 4")
 
         sys.exit(1)
-
-
 
     board = init_board(int(sys.argv[1]))
 

@@ -13,9 +13,6 @@ and has static method that returns bigger rectangle out of two given
 """
 
 
-
-
-
 class Rectangle:
 
     """
@@ -70,8 +67,6 @@ class Rectangle:
 
     print_symbol = "#"
 
-
-
     def __init__(self, width=0, height=0):
 
         """ Initialize rectangles """
@@ -82,20 +77,14 @@ class Rectangle:
 
         type(self).number_of_instances += 1
 
-
-
     @property
-
     def width(self):
 
         """ Getter returns width """
 
         return self.__width
 
-
-
     @width.setter
-
     def width(self, value):
 
         """ Setter sets width if int > 0 """
@@ -110,20 +99,14 @@ class Rectangle:
 
         self.__width = value
 
-
-
     @property
-
     def height(self):
 
         """ Getter returns height """
 
         return self.__height
 
-
-
     @height.setter
-
     def height(self, value):
 
         """ Setter sets height if int > 0 """
@@ -138,15 +121,11 @@ class Rectangle:
 
         self.__height = value
 
-
-
     def area(self):
 
         """ Return width * height """
 
         return self.__width * self.__height
-
-
 
     def perimeter(self):
 
@@ -157,8 +136,6 @@ class Rectangle:
             return 0
 
         return 2 * (self.__width + self.height)
-
-
 
     def __str__(self):
 
@@ -174,15 +151,11 @@ class Rectangle:
 
         return rect
 
-
-
     def __repr__(self):
 
         """ String representation to recreate new instance """
 
         return "Rectangle({:d}, {:d})".format(self.width, self.height)
-
-
 
     def __del__(self):
 
@@ -192,10 +165,7 @@ class Rectangle:
 
         type(self).number_of_instances -= 1
 
-
-
     @staticmethod
-
     def bigger_or_equal(rect_1, rect_2):
 
         if type(rect_1) is not Rectangle:
