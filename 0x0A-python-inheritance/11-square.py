@@ -52,8 +52,6 @@ class Square(Rectangle):
 
         self.__size = size
 
-
-
     def __str__(self):
 
         """prints [Square] <width>/<height>"""
