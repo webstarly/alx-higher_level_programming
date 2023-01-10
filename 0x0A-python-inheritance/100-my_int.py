@@ -29,8 +29,6 @@ class MyInt(int):
 
         self.num = num
 
-
-
     def __eq__(self, other):
 
         """
@@ -42,8 +40,6 @@ class MyInt(int):
         """
 
         return self.num != other
-
-
 
     def __ne__(self, other):
 
