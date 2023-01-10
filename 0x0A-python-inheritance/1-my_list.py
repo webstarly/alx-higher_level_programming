@@ -9,9 +9,6 @@ inherits from list; has public instance method to print sorted
 """
 
 
-MyList = __import__('1-my_list').MyList
-
-
 class MyList(list):
 
     """inherits from list
