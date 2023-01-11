@@ -19,8 +19,6 @@ def append_after(filename="", search_string="", new_string=""):
 
     """
 
-
-
     with open(filename, "r+", encoding="utf-8") as f:
 
         new_text = ""
