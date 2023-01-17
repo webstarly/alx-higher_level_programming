@@ -59,50 +59,35 @@ class Rectangle(Base):
 
         self.y = y
 
-
-
     @property
-
     def width(self):
 
         """get width"""
 
         return self.__width
 
-
-
     @property
-
     def height(self):
 
         """get height"""
 
         return self.__height
 
-
-
     @property
-
     def x(self):
 
         """get x"""
 
         return self.__x
 
-
-
     @property
-
     def y(self):
 
         """get y"""
 
         return self.__y
 
-
-
     @width.setter
-
     def width(self, value):
 
         """setr width"""
@@ -117,10 +102,7 @@ class Rectangle(Base):
 
         self.__width = value
 
-
-
     @height.setter
-
     def height(self, value):
 
         """set height"""
@@ -135,10 +117,7 @@ class Rectangle(Base):
 
         self.__height = value
 
-
-
     @x.setter
-
     def x(self, value):
 
         """set x"""
@@ -153,10 +132,7 @@ class Rectangle(Base):
 
         self.__x = value
 
-
-
     @y.setter
-
     def y(self, value):
 
         """set y"""
@@ -171,15 +147,11 @@ class Rectangle(Base):
 
         self.__y = value
 
-
-
     def area(self):
 
         """Area of the rectangle"""
 
         return self.__width * self.__height
-
-
 
     def display(self):
 
@@ -195,8 +167,6 @@ class Rectangle(Base):
 
                         for rows in range(self.__height)))
 
-
-
     def __str__(self):
 
         """Prints [Rectangle] (<id>) <x>/<y> - <width>/<height>"""
@@ -208,8 +178,6 @@ class Rectangle(Base):
                         self.__x, self.__y,
 
                         self.__width, self.__height)
-
-
 
     def update(self, *args, **kwargs):
 
@@ -268,8 +236,6 @@ class Rectangle(Base):
                 if k == "y":
 
                     self.y = v
-
-
 
     def to_dictionary(self):
 

@@ -17,13 +17,7 @@ Returns dictionary representation of attributes
 """
 
 
-
-
-
 from models.rectangle import Rectangle
-
-
-
 
 
 class Square(Rectangle):
@@ -84,20 +78,14 @@ class Square(Rectangle):
 
         self.size = size
 
-
-
     @property
-
     def size(self):
 
         """Getter size"""
 
         return self.width
 
-
-
     @size.setter
-
     def size(self, value):
 
         """Setter size - sets width and height as size"""
@@ -105,8 +93,6 @@ class Square(Rectangle):
         self.width = value
 
         self.height = value
-
-
 
     def __str__(self):
 
@@ -117,8 +103,6 @@ class Square(Rectangle):
             self.__class__.__name__, self.id, self.x, self.y,
 
             self.size)
-
-
 
     def update(self, *args, **kwargs):
 
@@ -169,8 +153,6 @@ class Square(Rectangle):
                 if k == "y":
 
                     self.y = v
-
-
 
     def to_dictionary(self):
 

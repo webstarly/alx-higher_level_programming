@@ -52,7 +52,7 @@ class Base:
 
     def __init__(self, id=None):
 
-    """ Initialize base """
+        """ Initialize base """
 
         if id is not None:
 
@@ -75,10 +75,7 @@ class Base:
 
         return json.dumps(list_dictionaries)
 
-
-
     @staticmethod
-
     def from_json_string(json_string):
 
         """Returns Python obj of JSON string representation"""
@@ -89,10 +86,7 @@ class Base:
 
         return json.loads(json_string)
 
-
-
     @classmethod
-
     def save_to_file(cls, list_objs):
 
         """Save json strings of all instances into file"""
@@ -111,10 +105,7 @@ class Base:
 
             f.write(cls.to_json_string(objs))
 
-
-
     @classmethod
-
     def create(cls, **dictionary):
 
         """Returns instance with attributes already set"""
@@ -131,10 +122,7 @@ class Base:
 
         return dummy
 
-
-
     @classmethod
-
     def load_from_file(cls):
 
         """Returns list of instances"""
@@ -159,10 +147,7 @@ class Base:
 
         return line
 
-
-
     @classmethod
-
     def save_to_file_csv(cls, list_objs):
 
         filename = cls.__name__ + ".csv"
@@ -181,10 +166,7 @@ class Base:
 
                     writer.writerow([o.id, o.size, o.x, o.y])
 
-
-
     @classmethod
-
     def load_from_file_csv(cls):
 
         objs = []
@@ -225,10 +207,7 @@ class Base:
 
         return objs
 
-
-
     @staticmethod
-
     def draw(list_rectangles, list_squares):
 
         """opens a window and draws all the Rectangles and Squares"""
@@ -270,8 +249,6 @@ class Base:
                 row_width = rect.width + rect.x + padding * 2
 
                 row_height = rect.height + rect.y
-
-
 
         for square in list_squares:
 
@@ -395,8 +372,6 @@ class Base:
 
             turtle.right(90)
 
-
-
         for square in list_squares:
 
             potential_width = row_width + square.size + square.x + padding
@@ -476,8 +451,6 @@ class Base:
             turtle.forward(square.y)
 
             turtle.right(90)
-
-
 
         turtle.getscreen()._root.mainloop()
 
