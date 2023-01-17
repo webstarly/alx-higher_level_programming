@@ -48,11 +48,11 @@ class Base:
 
     """
 
- __nb_objects = 0
+    __nb_objects = 0
 
- def __init__(self, id=None):
+    def __init__(self, id=None):
 
-        """ Initialize base """
+    """ Initialize base """
 
         if id is not None:
 
@@ -64,10 +64,7 @@ class Base:
 
             self.id = type(self).__nb_objects
 
-
-
     @staticmethod
-
     def to_json_string(list_dictionaries):
 
         """Returns JSON string representation of list dict"""
